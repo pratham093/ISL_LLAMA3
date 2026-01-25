@@ -6,6 +6,7 @@ import FamilyImg from './Imgs/Family.png'
 import PleaseImg from './Imgs/Please.png'
 import MeImg from './Imgs/Me.png'
 import ThanksImg from './Imgs/Thanks.png'
+import DemoVideo from './Imgs/DRAFT(1).mp4'
 
 const AnimatedCounter = ({ end, suffix = '' }) => {
   const [count, setCount] = useState(0)
@@ -276,16 +277,12 @@ export default function App() {
 
           <div className={`max-w-4xl mx-auto rounded-3xl overflow-hidden ${darkMode ? 'bg-gray-800' : 'bg-white shadow-2xl'} border ${darkMode ? 'border-gray-700' : 'border-gray-200'}`}>
             <div className="aspect-video relative bg-black">
-              {/* REPLACE THIS WITH YOUR YOUTUBE EMBED OR VIDEO */}
-              <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-gray-900 to-gray-800">
-                <div className="text-center">
-                  <div className={`w-24 h-24 mx-auto mb-6 rounded-full flex items-center justify-center bg-gradient-to-br from-indigo-500 to-violet-600 animate-pulse-glow cursor-pointer hover:scale-110 transition-transform`}>
-                    <PlayCircle className="w-12 h-12 text-white" />
-                  </div>
-                  <p className="text-xl font-medium text-white mb-2">Demo Video</p>
-                  <p className="text-sm text-gray-400">Click to play demonstration</p>
-                </div>
-              </div>
+              <video
+                className="absolute inset-0 w-full h-full object-cover"
+                src={DemoVideo}
+                controls
+                preload="metadata"
+              />
               
               {/* 
               YOUTUBE EMBED - Uncomment and replace VIDEO_ID with your YouTube video ID:
