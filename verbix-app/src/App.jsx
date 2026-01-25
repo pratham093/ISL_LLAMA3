@@ -6,7 +6,7 @@ import FamilyImg from './Imgs/Family.png'
 import PleaseImg from './Imgs/Please.png'
 import MeImg from './Imgs/Me.png'
 import ThanksImg from './Imgs/Thanks.png'
-import DemoVideo from './Imgs/DRAFT(1).mp4'
+import DemoVideo from './Imgs/DRAFT (1).mp4'
 
 const AnimatedCounter = ({ end, suffix = '' }) => {
   const [count, setCount] = useState(0)
